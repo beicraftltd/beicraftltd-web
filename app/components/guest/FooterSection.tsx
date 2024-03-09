@@ -18,36 +18,16 @@ export default function FooterSection() {
             </section>
             {/* navigation body starts here */}
             <section className="col-span-4 flex flex-col space-y-1 text-sm sm:max-md:pr-grid-col lg:col-span-2">
-              <h2 className="text-slate-500">Company</h2>
+              <h2 className="text-slate-500">Beicraft</h2>
               <ul className="space-y-1">
                 <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
+                  <a className="text-slate-700 no-underline" href="#">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
+                  <a className="text-slate-700 no-underline" href="#">
                     Our Team
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Mission and Values
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Awards and Recognitions
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Partnerships
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Clients and Projects
                   </a>
                 </li>
               </ul>
@@ -56,126 +36,56 @@ export default function FooterSection() {
               <h2 className="text-slate-500">Services</h2>
               <ul className="space-y-1">
                 <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Web Development
+                  <a className="text-slate-700 no-underline" href="#">
+                    App Development
                   </a>
                 </li>
+
                 <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Mobile App Development
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
+                  <a className="text-slate-700 no-underline" href="#">
                     Software Testing
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
+                  <a className="text-slate-700 no-underline" href="#">
                     Consultation Services
                   </a>
                 </li>
-                <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Custom Software Solutions
-                  </a>
-                </li>
               </ul>
+            </section>
+            <section className="col-span-4 flex flex-col space-y-1 text-sm sm:max-md:pr-grid-col lg:col-span-2">
               <h2 className="pt-5 text-slate-500 sm:pt-2">Talk to us</h2>
               <ul className="space-y-1">
                 <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="tel:+447491272732">
+                  <a className="text-slate-700 no-underline" href="tel:+447491272732">
                     Call +44 7491 2727 32
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="/contact">
+                  <a className="text-slate-700 no-underline" href="/contact">
                     Contact us
                   </a>
                 </li>
               </ul>
             </section>
-            <section className="col-span-4 flex flex-col space-y-1 text-sm sm:max-md:pr-grid-col lg:col-span-2">
-              <h2 className="text-slate-500">Resources</h2>
-              <ul className="space-y-1">
-                <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Free Web Development Resources
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Mobile App Development Guides
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" rel="nofollow noopener noreferrer" className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Software Testing Best Practices
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" rel="nofollow noopener noreferrer" className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Latest Industry News
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" rel="nofollow noopener noreferrer" className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Case Studies
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" rel="nofollow noopener noreferrer" className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Whitepapers and E-books
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" rel="nofollow noopener noreferrer" className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Video Tutorials
-                  </a>
-                </li>
-              </ul>
-            </section>
+
             <section className="col-span-4 flex flex-col space-y-1 text-sm sm:max-md:pr-grid-col lg:col-span-2">
               <h2 className="text-slate-500">Quick Links</h2>
               <ul className="space-y-1">
                 <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Courses
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Testimonials
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
+                  <a className="text-slate-700 no-underline" href="#">
                     FAQ
                   </a>
                 </li>
+
                 <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Community Forums
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
+                  <a className="text-slate-700 no-underline" href="#">
                     Partner with Us
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
+                  <a className="text-slate-700 no-underline" href="#">
                     Our Products
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-50 no-underline hover:text-orange" href="#">
-                    Pricing
                   </a>
                 </li>
               </ul>
@@ -203,35 +113,35 @@ export default function FooterSection() {
           </div>
           {/* social media */}
           <div className="col-span-full flex items-center gap-2 sm:gap-3 md:col-span-6 md:place-content-end">
-            <a className="transition hover:text-gray-50" target="_blank" rel="me nofollow noopener noreferrer" aria-label="X (formerly Twitter)" href="#">
+            <a className="transition hover:text-slate-700" target="_blank" rel="me nofollow noopener noreferrer" aria-label="X (formerly Twitter)" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
                   d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
               </svg>
             </a>
-            <a className="transition hover:text-gray-50" target="_blank" rel="me nofollow noopener noreferrer" aria-label="GitHub" href="#">
+            <a className="transition hover:text-slate-700" target="_blank" rel="me nofollow noopener noreferrer" aria-label="GitHub" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18">
                 <path
                   fill="currentColor"
                   d="M9 0C4.027 0 0 4.089 0 9.137 0 13.431 2.902 16.995 6.818 18a1.3 1.3 0 0 1-.068-.434v-1.554H5.625c-.607 0-1.17-.273-1.418-.776-.292-.549-.337-1.394-1.08-1.92-.225-.182-.045-.365.203-.343.472.137.854.458 1.214.937s.518.594 1.193.594c.315 0 .81-.023 1.26-.092.247-.64.675-1.21 1.193-1.485-3.015-.365-4.455-1.873-4.455-3.929 0-.891.382-1.736 1.012-2.467-.202-.709-.472-2.17.09-2.742 1.351 0 2.16.892 2.363 1.12a6.8 6.8 0 0 1 2.182-.366c.788 0 1.508.137 2.182.365.203-.228 1.013-1.119 2.363-1.119.54.549.292 2.033.067 2.742.63.708.99 1.576.99 2.467 0 2.056-1.417 3.564-4.41 3.884.833.433 1.419 1.667 1.419 2.58v2.082c0 .068-.023.136-.023.205C15.48 16.516 18 13.135 18 9.137 18 4.09 13.973 0 9 0"></path>
               </svg>
             </a>
-            <a className="transition hover:text-gray-50" target="_blank" rel="me nofollow noopener noreferrer" aria-label="LinkedIn" href="#">
+            <a className="transition hover:text-slate-700" target="_blank" rel="me nofollow noopener noreferrer" aria-label="LinkedIn" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18">
                 <path
                   fill="currentColor"
                   d="M0 1.29C0 .576.592 0 1.322 0h15.356C17.408 0 18 .577 18 1.29v15.42c0 .713-.592 1.29-1.322 1.29H1.322C.592 18 0 17.423 0 16.71zm5.56 13.778V6.94h-2.7v8.128zM4.21 5.83c.943 0 1.529-.623 1.529-1.404-.017-.798-.585-1.404-1.51-1.404S2.7 3.629 2.7 4.426c0 .78.586 1.404 1.493 1.404zm5.522 9.238v-4.54c0-.242.018-.485.09-.658.195-.485.64-.988 1.386-.988.978 0 1.368.745 1.368 1.838v4.348h2.701v-4.662c0-2.497-1.331-3.658-3.109-3.658-1.433 0-2.076.787-2.436 1.342v.028h-.018l.018-.028V6.94h-2.7c.034.763 0 8.128 0 8.128z"></path>
               </svg>
             </a>
-            <a className="transition hover:text-gray-50" target="_blank" rel="me nofollow noopener noreferrer" aria-label="Facebook" href="#">
+            <a className="transition hover:text-slate-700" target="_blank" rel="me nofollow noopener noreferrer" aria-label="Facebook" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18">
                 <path
                   fill="currentColor"
                   d="M18 9.055C18 4.054 13.97 0 9.001 0 4.03.001 0 4.054 0 9.056 0 13.575 3.291 17.321 7.593 18v-6.327H5.309V9.056h2.286V7.06c0-2.27 1.344-3.522 3.4-3.522.985 0 2.014.176 2.014.176v2.228h-1.135c-1.117 0-1.466.698-1.466 1.415v1.698h2.495l-.398 2.616h-2.098V18C14.71 17.319 18 13.574 18 9.055"></path>
               </svg>
             </a>
-            <a className="transition hover:text-gray-50" target="_blank" rel="me nofollow noopener noreferrer" aria-label="Twitch" href="#">
+            <a className="transition hover:text-slate-700" target="_blank" rel="me nofollow noopener noreferrer" aria-label="Twitch" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="none" viewBox="0 0 16 18">
                 <g fill="currentColor">
                   <path d="M3.214 0 0 3.214v11.572h3.857V18l3.214-3.214h2.572L15.429 9V0zm10.929 8.357L11.57 10.93H9l-2.25 2.25v-2.25H3.857V1.286h10.286z"></path>
@@ -239,7 +149,7 @@ export default function FooterSection() {
                 </g>
               </svg>
             </a>
-            <a className="transition hover:text-gray-50" target="_blank" rel="me nofollow noopener noreferrer" aria-label="YouTube" href="https://www.youtube.com/planetscale">
+            <a className="transition hover:text-slate-700" target="_blank" rel="me nofollow noopener noreferrer" aria-label="YouTube" href="https://www.youtube.com/planetscale">
               <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14" fill="none" viewBox="0 0 19 14">
                 <path
                   fill="currentColor"
@@ -248,7 +158,7 @@ export default function FooterSection() {
                   clipRule="evenodd"></path>
               </svg>
             </a>
-            <a target="_blank" className="transition hover:text-gray-50" rel="me nofollow noopener noreferrer" aria-label="TikTok" href="https://tiktok.com/@planetscale">
+            <a target="_blank" className="transition hover:text-slate-700" rel="me nofollow noopener noreferrer" aria-label="TikTok" href="https://tiktok.com/@planetscale">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="none" viewBox="0 0 16 18">
                 <path
                   fill="currentColor"
