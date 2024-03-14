@@ -6,13 +6,21 @@ import React from 'react'
 
 function Logo() {
   return (
-    <Image
+    <div >
+      
+      <Image
         alt="Beicraft Logo"
-        className=" hidden md:block cursor-pointer"
+        className=" hidden md:block cursor-pointer dark:bg-slate-100"
         height={50}
         width={70}
         src={"/images/logo.png"}
+        
         />
+    </div>
+    
+        
+        
+        
   )
 }
 
