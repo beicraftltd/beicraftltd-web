@@ -1,9 +1,12 @@
 import React from "react";
-// import "./App.css"; // You can add any additional styling here
+import Image from "next/image";
+import headsetSvg from "/assets/images-headset.svg";
+import integrationLogoSvg from "/assets/images-Integration-logo.svg";
+import documentationSvg from "/assets/header-LambdaTest-Documentation.svg";
 
 const Features: React.FC = () => {
   return (
-    <div className="bg-blue-100 py-24 px-6 md:px-72">
+    <div className="bg-blue-100 py-24 px-6 md:px-36 lg:px-72">
       <div className="text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
           More Reasons To Love LambdaTest
@@ -16,9 +19,12 @@ const Features: React.FC = () => {
       </div>
       <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="bg-white p-8 rounded shadow-md text-center">
-          <img
-            src="./assets/headset-svg.svg"
+          <Image
+            src={headsetSvg}
             alt="24/7 Support"
+            width={52}
+            height={52}
+            loading="lazy"
             className="mx-auto mb-4"
           />
           <h3 className="text-xl font-medium mb-2">24/7 Support</h3>
@@ -38,9 +44,12 @@ const Features: React.FC = () => {
           </p>
         </div>
         <div className="bg-white p-8 rounded shadow-md text-center">
-          <img
-            src="./assets/integration-logo-svg.svg"
+          <Image
+            src={integrationLogoSvg}
             alt="Third-Party Integrations"
+            width={52}
+            height={52}
+            loading="lazy"
             className="mx-auto mb-4"
           />
           <h3 className="text-xl font-medium mb-2">Third-Party Integrations</h3>
@@ -50,9 +59,12 @@ const Features: React.FC = () => {
           </p>
         </div>
         <div className="bg-white p-8 rounded shadow-md text-center">
-          <img
-            src="./assets/lambda-test-documentation-svg.svg"
+          <Image
+            src={documentationSvg}
             alt="Documentation"
+            width={52}
+            height={52}
+            loading="lazy"
             className="mx-auto mb-4"
           />
           <h3 className="text-xl font-medium mb-2">Documentation</h3>

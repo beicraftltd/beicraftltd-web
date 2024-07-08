@@ -1,25 +1,19 @@
 import React from "react";
-// import "./App.css"; // Include any additional styling here
+import Image from "next/image"; // Assuming you are using Next.js for optimized images
+import treppCustomer from "/assets/customer-trepp-customer.svg";
+import edurekaCustomer from "/assets/customer-edureka-customer.svg";
+import innovativeCustomer from "/assets/customer-innovative-customer.svg";
+import noibuCustomer from "/assets/customer-noibu-customer.svg";
+import emburseCustomer from "/assets/customer-emburse-customer.svg";
+import blueRightArrow from "/assets/partner-blue_right_section.svg";
 
 const CaseStudy: React.FC = () => {
   const customers = [
-    { name: "Trepp", src: "./assets/trepp-customer.svg", highlighted: true },
-    {
-      name: "Edureka",
-      src: "../../../assets/edureka-customer.svg",
-      highlighted: false,
-    },
-    {
-      name: "Emburse",
-      src: "../../../assets/emburse-customer.svg",
-      highlighted: false,
-    },
-    { name: "Noibu", src: "./assets/noibu-customer.svg", highlighted: false },
-    {
-      name: "Innovative",
-      src: "../../../assets/innovative-customer.svg",
-      highlighted: false,
-    },
+    { name: "Trepp", src: treppCustomer, highlighted: true },
+    { name: "Edureka", src: edurekaCustomer, highlighted: false },
+    { name: "Emburse", src: emburseCustomer, highlighted: false },
+    { name: "Noibu", src: noibuCustomer, highlighted: false },
+    { name: "Innovative", src: innovativeCustomer, highlighted: false },
   ];
 
   return (
@@ -33,7 +27,14 @@ const CaseStudy: React.FC = () => {
                 customer.highlighted ? "bg-gray-200" : ""
               }`}
             >
-              <img src={customer.src} alt={customer.name} className="mr-2" />
+              <Image
+                src={customer.src}
+                alt={customer.name}
+                loading="lazy"
+                width={50} // Adjust width as per your design needs
+                height={50} // Adjust height as per your design needs
+                className="mr-2"
+              />
               <span>{customer.name}</span>
             </div>
           ))}
@@ -43,16 +44,19 @@ const CaseStudy: React.FC = () => {
           className="font-medium text-blue-600 flex items-center space-x-2"
         >
           <span>See more</span>{" "}
-          <img
-            src="../../../assets/blue-right-section-svg.svg"
+          <Image
+            src={blueRightArrow}
             alt="Arrow"
+            loading="lazy"
+            width={16} // Adjust width as per your design needs
+            height={16} // Adjust height as per your design needs
             className="w-4 h-4"
           />
         </a>
       </div>
       <div className="w-full md:w-3/4 flex">
         <div className="w-1/2 bg-blue-600 p-10 rounded-l-lg text-white">
-          <h2 className="text-3xl font-semibold mb-4">Trepp</h2>
+          <h2 className="text-3xl lg:text-4xl font-semibold mb-4">Trepp</h2>
           <p className="text-lg mb-8">
             By being able to run our Selenium scripts on the legacy and latest
             browsers on LambdaTest helped us save significant time in test

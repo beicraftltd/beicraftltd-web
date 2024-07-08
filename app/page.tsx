@@ -17,11 +17,13 @@ import Statistic from "./components/guest/Statistics";
 import Cta3 from "./components/guest/Cta3";
 import Footer from "./components/guest/Footer";
 import FeaturesSection from "./components/guest/FeaturesSection";
+import Chatbot from "./components/ChatBot";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       <Navbar />
+      {/* <Chatbot /> */}
       <HeroSection />
       <FeaturesSection />
 
