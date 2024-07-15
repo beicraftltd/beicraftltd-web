@@ -5,9 +5,8 @@ import vimeoLogo from "/assets/collabs-Vimeo.svg";
 import nvidiaLogo from "/assets/collabs-Nvidia.svg";
 import telstraLogo from "/assets/collabs-Telstra.svg";
 import rubrikLogo from "/assets/collabs-rubrik.svg";
-import googleIcon from "/assets/images-google_favicon.svg";
 import homeBanner from "/assets/main-home_banner_callouts.png";
-import backgroundBorder from "/assets/background-border-shadow.svg";
+import HeroButtons from "@/app/SHADCN/HeroButtons";
 
 const Hero: React.FC = () => {
   return (
@@ -32,20 +31,7 @@ const Hero: React.FC = () => {
           experience across all devices and browsers.
         </p>
         <div className="flex space-x-4">
-          <button className="flex items-center px-6 py-3 rounded-md font-medium text-lg transition transform hover:scale-105 bg-black text-white">
-            <Image
-              src={googleIcon}
-              alt="Google Icon"
-              loading="eager"
-              width={150}
-              height={150}
-              className="bg-white flex items-center px-6 py3 rounded-tl-lg rounded-bl-lg border-2 border-black border-r-0 xxxl:py-16 xxl:py-15 py-13 s-gimage"
-            />
-            Start free with Google
-          </button>
-          <button className="flex items-center px-6 py-3 rounded-md font-medium text-lg transition transform hover:scale-105 bg-white text-black border border-black">
-            Start free with Email
-          </button>
+          <HeroButtons />
         </div>
         <p className="text-lg font-light text-gray-600">
           Trusted by 2M+ users globally

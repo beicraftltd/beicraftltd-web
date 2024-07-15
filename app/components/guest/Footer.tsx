@@ -23,6 +23,7 @@ import linkedinIcon from "/assets/icons-linkedin-logo.png";
 import youtubeIcon from "/assets/icons-youtube-logo.png";
 import githubIcon from "/assets/icons-github_icon.png";
 import glassDoorIcon from "/assets/icons-glassdoor.svg";
+import HeroButtons from "@/app/SHADCN/HeroButtons";
 
 const FOOTER_LINKS = [
   {
@@ -184,7 +185,8 @@ const Footer: React.FC = () => {
               experience across all devices and browsers.
             </p>
             <div className="flex space-x-4">
-              <button className="bg-white border-2 border-gray-300 px-4 py-2 rounded-md flex items-center">
+              <HeroButtons/>
+              {/* <button className="bg-white border-2 border-gray-300 px-4 py-2 rounded-md flex items-center">
                 <Image
                   src={googleIcon}
                   alt="Google Icon"
@@ -194,7 +196,7 @@ const Footer: React.FC = () => {
               </button>
               <button className="bg-white border-2 border-gray-300 px-4 py-2 rounded-md">
                 Start free with Email
-              </button>
+              </button> */}
             </div>
           </div>
           <div className="text-left md:text-right">

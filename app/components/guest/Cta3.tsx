@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const Cta3: React.FC = () => {
   return (
@@ -14,15 +15,21 @@ const Cta3: React.FC = () => {
           </h1>
         </div>
         <div className="flex flex-col md:flex-row items-center gap-4">
-          <Link legacyBehavior href="#">
-            <a className="bg-black text-white px-6 py-3 text-lg md:text-xl font-medium rounded-lg text-center">
-              Signup for free
-            </a>
+          <Link href="#" legacyBehavior>
+            <Button
+              asChild
+              className="bg-black text-white px-6 py-3 text-lg md:text-xl font-medium rounded-lg text-center"
+            >
+              <a>Signup for free</a>
+            </Button>
           </Link>
-          <Link legacyBehavior href="#">
-            <a className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 text-lg md:text-xl font-medium rounded-lg text-center">
-              Talk to us
-            </a>
+          <Link href="#" legacyBehavior>
+            <Button
+              asChild
+              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 text-lg md:text-xl font-medium rounded-lg text-center"
+            >
+              <a>Talk to us</a>
+            </Button>
           </Link>
         </div>
       </div>
