@@ -91,3 +91,18 @@
   transition: transform 0.3s ease;
 }
 
+@layer components {
+  /* Container CSS */
+  .container-xs {
+    @apply w-full mx-auto max-w-[1110px];
+  }
+  .container-sm {
+    @apply w-full mx-auto max-w-[1164px];
+  }
+  .container-md {
+    @apply w-full mx-auto max-w-[1270px];
+  }
+  .container-lg {
+    @apply w-full mx-auto max-w-[1616px];
+  }
+}
