@@ -62,8 +62,8 @@ const Collaboration: React.FC = () => {
             src={rightArrowIcon}
             alt="Arrow"
             loading="lazy"
-            width={16} // Adjust width as per your design needs
-            height={16} // Adjust height as per your design needs
+            width={15} // Adjust width as per your design needs
+            height={15} 
             className="w-4 h-4"
           />
         </a>

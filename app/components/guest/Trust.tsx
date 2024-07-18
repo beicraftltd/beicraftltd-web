@@ -18,13 +18,12 @@ const Trust: React.FC = () => {
             work we share.
           </p>
         </div>
-        <div className="w-full lg:w-1/2 flex flex-wrap justify-center md:justify-start">
+        <div className="flex flex-wrap justify-center md:justify-start">
           <Image
             src={epCertifiedPng}
             alt="Certifications"
             width={1123}
             height={634}
-            className="w-full h-auto"
           />
         </div>
       </div>

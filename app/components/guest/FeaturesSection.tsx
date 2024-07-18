@@ -1,6 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import styles from "./FeatureSection.module.css"; // Adjust path to your CSS file
+import {
+  Collapsible,
+  CollapsibleTrigger,
+  CollapsibleContent,
+} from "./Collapsible"; // Adjust path to your Collapsible component
 import live from "/assets/live-index.png";
 import visual from "/assets/visual-index.png";
 import ai from "/assets/ai-index.png";
@@ -141,24 +146,28 @@ const FeatureSection: React.FC = () => {
                   ></span>
                 </span>
                 <div className="p-4">
-                  <div
-                    className={`text-lg font-medium text-left w-full focus:outline-none ${
-                      activeIndex === idx ? "expanded" : ""
-                    }`}
-                  >
-                    {feature.title}
-                  </div>
-                  {activeIndex === idx && (
-                    <div className="mt-2 text-gray-700">
-                      <p>{feature.description}</p>
-                      <a
-                        href={feature.link}
-                        className="inline-block mt-2 text-blue-600 hover:underline"
+                  <Collapsible>
+                    <CollapsibleTrigger onClick={() => setActiveIndex(idx)}>
+                      <div
+                        className={`text-lg font-medium text-left w-full focus:outline-none ${
+                          activeIndex === idx ? "expanded" : ""
+                        }`}
                       >
-                        More about {feature.title} &rarr;
-                      </a>
-                    </div>
-                  )}
+                        {feature.title}
+                      </div>
+                    </CollapsibleTrigger>
+                    <CollapsibleContent isOpen={activeIndex === idx}>
+                      <div className="mt-2 text-gray-700">
+                        <p>{feature.description}</p>
+                        <a
+                          href={feature.link}
+                          className="inline-block mt-2 text-blue-600 hover:underline"
+                        >
+                          More about {feature.title} &rarr;
+                        </a>
+                      </div>
+                    </CollapsibleContent>
+                  </Collapsible>
                 </div>
               </div>
             ))}
