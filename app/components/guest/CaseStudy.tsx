@@ -16,7 +16,7 @@ interface Customer {
 }
 
 const CaseStudy: React.FC = () => {
-  const [selectedCustomer, setSelectedCustomer] = useState<string | null>(null);
+  const [selectedCustomer, setSelectedCustomer] = useState<string>("Trepp");
 
   const customers: Customer[] = [
     { name: "Trepp", src: treppCustomer, backgroundColor: "#0569ff" },
@@ -32,13 +32,13 @@ const CaseStudy: React.FC = () => {
   // Helper function to get background color for selected customer
   const getCustomerBackgroundColor = (name: string | null) => {
     const customer = customers.find((customer) => customer.name === name);
-    return customer && customer.backgroundColor ; // Default color if no customer selected
+    return customer && customer.backgroundColor; // Default color if no customer selected
   };
 
   return (
-    <section className="flex flex-wrap bg-white py-10">
+    <section className="flex flex-wrap bg-white mb-20">
       <div className="w-full md:w-1/4 px-6">
-        <Carousel>
+        <Carousel className="flex flex-wrap md:flex-col justify-center md:justify-start">
           {customers.map((customer, index) => (
             <li
               key={index}
@@ -51,8 +51,8 @@ const CaseStudy: React.FC = () => {
                 src={customer.src}
                 alt={customer.name}
                 loading="lazy"
-                width={75} // Adjust width as per your design needs
-                height={26} // Adjust height as per your design needs
+                width={75}
+                height={26}
                 className={`mr-2 transition-filter duration-300 ${
                   selectedCustomer === customer.name ? "" : "filter grayscale"
                 }`}
@@ -63,21 +63,20 @@ const CaseStudy: React.FC = () => {
 
         <a
           href="#"
-          className="text-lg text-blue-600 font-medium flex items-center space-x-2 mt-6"
+          className="text-sm text-blue-600 font-medium flex items-center sm:justify-center md:justify-start space-x-2 mt-6"
         >
-          <span>See more</span>
+          <span>All Stories</span>
           <Image
             src={blueRightArrow}
             alt="Arrow"
             loading="lazy"
             width={14}
             height={12}
-            className="w-4 h-auto"
           />
         </a>
       </div>
       <div
-        className="w-full md:w-3/4 flex flex-wrap"
+        className="w-full md:w-3/4 rounded-lg flex flex-wrap"
         style={{
           backgroundColor: getCustomerBackgroundColor(selectedCustomer),
         }}
@@ -125,7 +124,7 @@ const CaseStudy: React.FC = () => {
               "Increased developer feedback time"}
             {selectedCustomer === "Innovative" && "Reduced Test Execution Time"}
           </p>
-          <Button className="bg-black text-white py-2 px-4 rounded shadow">
+          <Button className="bg-black border border-black hover:text-black hover:bg-transparent text-white py-2 px-4 rounded">
             Read Case Study
           </Button>
         </div>
