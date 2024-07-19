@@ -7,6 +7,7 @@ import user3 from "/assets/images-Michael.png";
 import user4 from "/assets/images-ben.png";
 import user5 from "/assets/images-matthew.png";
 import user6 from "/assets/images-TimothyWintle.png";
+import { Button } from "@/components/ui/button";
 
 const reviews = [
   {
@@ -56,12 +57,12 @@ const Reviews: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
             They talk about it better than us
           </h2>
-          <a
-            href="#"
-            className="inline-block bg-black text-white py-3 px-6 rounded shadow hover:bg-transparent hover:text-black rounded border border-black"
+          <Button
+            // ref="#"
+            className="inline-block bg-black text-white py-3 px-6 rounded shadow hover:bg-transparent hover:text-black rounded border border-black text-center"
           >
             Read All Reviews
-          </a>
+          </Button>
         </div>
         <div className="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-4">
           {reviews.map((review, index) => (

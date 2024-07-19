@@ -18,7 +18,7 @@ const Cta3: React.FC = () => {
           <Link href="#" legacyBehavior>
             <Button
               asChild
-              className="bg-black text-white px-6 py-3 text-lg md:text-xl font-medium rounded-lg text-center"
+              className="bg-black text-white px-6 py-3 text-lg md:text-xl font-medium rounded-lg hover:bg-transparent hover:text-black text-center border border-black"
             >
               <a>Signup for free</a>
             </Button>

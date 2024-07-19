@@ -15,7 +15,7 @@ const HeroButtons: React.FC = () => {
           href="https://accounts.lambdatest.com/login/google"
           className="flex items-center"
         >
-          <span className="bg-white flex items-center rounded-lg border-2 border-black hover:border-gradient-to-r hover:border-gradient-start hover:border-gradient-end">
+          <span className="bg-white flex items-center rounded-lg border-2 border-black">
             <Image
               loading="eager"
               src={googleIcon}
@@ -24,7 +24,7 @@ const HeroButtons: React.FC = () => {
               height={10}
               className="ml-2"
             />
-            <span className="bg-black flex-grow text-white text-center py-2 px-4 hover:bg-gradient-to-r hover:from-gradient-start hover:to-gradient-end ml-2">
+            <span className="bg-black flex-grow text-white text-center py-2 px-4 hover:bg-white hover:text-black ml-2">
               Start free with Google
             </span>
           </span>
@@ -35,7 +35,7 @@ const HeroButtons: React.FC = () => {
       <div className="flex-shrink-0">
         <Button
           asChild
-          className="text-base text-black inline-flex px-6 py-4 rounded-lg cursor-pointer items-center justify-center font-medium bg-white border-black hover:border-gradient-start hover:border-gradient-end"
+          className="text-base text-black inline-flex px-6 py-4 rounded-lg cursor-pointer items-center justify-center font-medium bg-white border-black hover:bg-black hover:text-white"
           variant={"outline"}
         >
           <a href="https://accounts.lambdatest.com/register">
