@@ -1,21 +1,31 @@
 import React from "react";
-// import "./App.css"; // You can add any additional styling here
+import Image from "next/image"; // Assuming you are using Next.js for optimized images
+import bitbucketIcon from "/assets/collabs-bitbucket.svg";
+import asanaIcon from "/assets/collabs-asana.svg";
+import slackIcon from "/assets/collabs-slack.svg";
+import gitlabIcon from "/assets/collabs-gitlab.svg";
+import trelloIcon from "/assets/collabs-trello.svg";
+import jenkinsIcon from "/assets/collabs-jenkins.svg";
+import githubIcon from "/assets/collabs-github.svg";
+import circleCiIcon from "/assets/collabs-CircleCI.svg";
+import jiraIcon from "/assets/collabs-jira.svg";
+import rightArrowIcon from "/assets/partner-blue_right_section.svg";
 
 const Collaboration: React.FC = () => {
   const integrations = [
-    { name: "Bitbucket", src: "./assets/bitbucket.svg" },
-    { name: "Asana", src: "../../../assets/asana.svg" },
-    { name: "Slack", src: "../../../assets/slack.svg" },
-    { name: "GitLab", src: "../../../assets/gitlab.svg" },
-    { name: "Trello", src: "../../../assets/trello.svg" },
-    { name: "Jenkins", src: "../../../assets/jenkins.svg" },
-    { name: "GitHub", src: "../../../assets/github.svg" },
-    { name: "CircleCI", src: "../../../assets/circle-ci-svg.svg" },
-    { name: "JIRA", src: "../../../assets/jira-svg.svg" },
+    { name: "Bitbucket", src: bitbucketIcon },
+    { name: "Asana", src: asanaIcon },
+    { name: "Slack", src: slackIcon },
+    { name: "GitLab", src: gitlabIcon },
+    { name: "Trello", src: trelloIcon },
+    { name: "Jenkins", src: jenkinsIcon },
+    { name: "GitHub", src: githubIcon },
+    { name: "CircleCI", src: circleCiIcon },
+    { name: "JIRA", src: jiraIcon },
   ];
 
   return (
-    <section className="bg-white py-24 px-6 md:px-96">
+    <section className="bg-white py-24 px-6 md:px-12 lg:px-24 xl:px-48">
       <div className="text-center mb-10">
         <h2 className="text-gray-700 text-3xl md:text-4xl font-extrabold mb-4">
           Seamless Collaboration
@@ -31,9 +41,12 @@ const Collaboration: React.FC = () => {
             key={index}
             className="flex justify-center items-center w-full h-28"
           >
-            <img
+            <Image
               src={integration.src}
               alt={integration.name}
+              loading="lazy"
+              width={200} // Adjust width as per your design needs
+              height={80} // Adjust height as per your design needs
               className="max-w-full max-h-full"
             />
           </div>
@@ -44,10 +57,13 @@ const Collaboration: React.FC = () => {
           href="#"
           className="text-gray-700 font-bold text-md uppercase flex items-center justify-center space-x-2"
         >
-          <span>See All Integrations</span>
-          <img
-            src="../../../assets/right-arrow-circle-black-svg.svg"
+          <span>See All Integrations</span>{" "}
+          <Image
+            src={rightArrowIcon}
             alt="Arrow"
+            loading="lazy"
+            width={15} // Adjust width as per your design needs
+            height={15} 
             className="w-4 h-4"
           />
         </a>

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Navbar from "./components/guest/Navbar";
+import Navbar from "./components/guest/MainNav";
 import Cta from "./components/guest/Cta";
 import HeroSection from "./components/guest/HeroSection";
 import Cta1 from "./components/guest/Cta1";
@@ -17,14 +17,17 @@ import Statistic from "./components/guest/Statistics";
 import Cta3 from "./components/guest/Cta3";
 import Footer from "./components/guest/Footer";
 import FeaturesSection from "./components/guest/FeaturesSection";
+import UserMenu from "./components/navbar/UserMenu";
+import SiteHeader from "./components/guest/siteHeader";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <Navbar />
+      {/* <Navbar /> */}
+      {/* <UserMenu /> */}
+      <SiteHeader />
       <HeroSection />
       <FeaturesSection />
-
       <Cta />
       <Cta1 />
       <Cta2 />

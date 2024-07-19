@@ -1,4 +1,12 @@
-import React from "react";
+import Image from "next/image";
+
+import microsoftLogo from "/assets/main-Microsoft.svg";
+import vimeoLogo from "/assets/collabs-Vimeo.svg";
+import nvidiaLogo from "/assets/collabs-Nvidia.svg";
+import telstraLogo from "/assets/collabs-Telstra.svg";
+import rubrikLogo from "/assets/collabs-rubrik.svg";
+import homeBanner from "/assets/main-home_banner_callouts.png";
+import HeroButtons from "@/app/SHADCN/HeroButtons";
 
 const Hero: React.FC = () => {
   return (
@@ -14,7 +22,7 @@ const Hero: React.FC = () => {
           <br />
           <span className="text-[#6f33f2]">Testing Cloud</span>
         </h1>
-        <hr className="w-24 border-t-2 border-gray-200 my-6" />
+        <hr className="w-24 border-t-2 border-black my-6" />
         <p className="text-lg font-light text-black leading-relaxed">
           Deliver unparalleled digital experience with our next-gen
           <br />
@@ -23,47 +31,66 @@ const Hero: React.FC = () => {
           experience across all devices and browsers.
         </p>
         <div className="flex space-x-4">
-          <button className="flex items-center px-6 py-3 rounded-md font-medium text-lg transition transform hover:scale-105 bg-black text-white">
-            <img
-              src="/assets/google-favicon-svg.svg"
-              alt="Google Icon"
-              className="mr-3"
-            />
-            Start free with Google
-          </button>
-          <button className="flex items-center px-6 py-3 rounded-md font-medium text-lg transition transform hover:scale-105 bg-white text-black border border-black">
-            Start free with Email
-          </button>
+          <HeroButtons />
         </div>
         <p className="text-lg font-light text-gray-600">
           Trusted by 2M+ users globally
         </p>
         <div className="flex space-x-4 py-4">
-          <img
-            src="/assets/microsoft-svg.svg"
+          <Image
+            src={microsoftLogo}
+            loading="eager"
             alt="Microsoft"
-            className="h-10"
+            width={120}
+            height={60}
           />
-          <img src="/assets/vimeo-svg.svg" alt="Vimeo" className="h-10" />
-          <img src="/assets/nvidia-svg.svg" alt="Nvidia" className="h-10" />
-          <img src="/assets/telstra-svg.svg" alt="Telstra" className="h-10" />
-          <img src="/assets/rubrik-svg.svg" alt="Rubrik" className="h-10" />
+          <Image
+            src={vimeoLogo}
+            alt="Vimeo"
+            loading="eager"
+            width={120}
+            height={60}
+          />
+          <Image
+            src={nvidiaLogo}
+            alt="Nvidia"
+            loading="eager"
+            width={120}
+            height={60}
+          />
+          <Image
+            src={telstraLogo}
+            alt="Telstra"
+            loading="eager"
+            width={120}
+            height={60}
+          />
+          <Image
+            src={rubrikLogo}
+            alt="Rubrik"
+            loading="eager"
+            width={120}
+            height={60}
+          />
         </div>
       </div>
       <div className="lg:w-1/2 w-full flex justify-center lg:justify-end relative mt-8 lg:mt-0">
-        <img
-          src="/assets/home-banner-webp.svg"
+        <Image
+          src={homeBanner}
           alt="Banner"
+          loading="eager"
+          width={1492}
+          height={936}
           className="w-full h-auto max-w-md lg:max-w-xl"
         />
-        <div className="absolute top-4 left-4">
-          <img
+        {/* <div className="absolute top-4 left-4">
+          <Image
             src="/assets/background-border-shadow.svg"
             alt="Background Border"
-            width="71"
-            height="71"
+            width={71}
+            height={71}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,0 +1,141 @@
+.progress-bar {
+  width: 4px;
+  height: 100%;
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+}
+
+.progress-bar__inner {
+  width: 100%;
+  height: 0;
+  background-color: #007bff;
+  transform-origin: top;
+  transition: height 5s linear, transform 0.3s ease;
+}
+
+.slide-toggle {
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.slide-toggle.expanded {
+  max-height: 500px; /* Adjust the max-height value as needed */
+  opacity: 1;
+}
+
+.relative {
+  position: relative;
+}
+
+.pt-90 {
+  padding-top: 90px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.container__selenium {
+  margin: 0 auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mx-15 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.text-black {
+  color: black;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-gray-240 {
+  color: #3a3a3a;
+}
+
+.tracking-wide {
+  letter-spacing: 0.1em;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.progress-bar_slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-toggle__toggle {
+  transition: all 0.3s ease;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.block {
+  display: block;
+}
+
+.py-2 {
+  padding: 0.5rem 0;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.w-8-12 {
+  width: 66.666667%;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
