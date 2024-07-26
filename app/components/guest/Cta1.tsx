@@ -23,34 +23,27 @@ const Cta1: React.FC = () => {
           </div>
           <div className="w-full lg:w-1/3 pl-0 lg:pl-6">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 leading-[30px] md:leading-[45px]">
-              Real Device Cloud for
-              <br />
-              Reliable Mobile App Testing
+              Real Device Cloud for Reliable Mobile App Testing
             </h2>
             <p className="text-lg text-gray-600 leading-[25px] md:leading-[30px] mt-4 md:mt-6">
-              Test your native hybrid of web mobile apps using
-              <br />
-              LambdaTest’s online real device cloud and virtual
-              <br />
-              mobile device platform of emulators and simulators.
-              <br />
-              Eliminating your in-house device labs and bring high
-              <br />
-              scalability to your mobile app testing.
+              Test your native hybrid of web mobile apps using LambdaTest&apos;s
+              online real device cloud and virtual mobile device platform of
+              emulators and simulators. Eliminating your in-house device labs
+              and bring high scalability to your mobile app testing.
             </p>
             <div className="mt-4 md:mt-6 flex items-center">
               <Link legacyBehavior href="#">
                 <a className="font-semibold text-blue-600 text-lg leading-[30px]">
-                  See More
+                  Get Started
                 </a>
               </Link>
-              <span className="ml-3">
+              <span className="ml-2 transition-transform duration-300 transform hover:translate-x-1">
                 <Image
                   src={ArrowImage}
                   alt="Arrow"
                   loading="lazy"
-                  width={24}
-                  height={24}
+                  width={18}
+                  height={12}
                 />
               </span>
             </div>

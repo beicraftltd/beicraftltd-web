@@ -72,16 +72,17 @@ const CaseStudy: React.FC = () => {
             loading="lazy"
             width={14}
             height={12}
+            className="transition-transform duration-300 transform hover:translate-x-1"
           />
         </a>
       </div>
       <div
-        className="w-full md:w-3/4 rounded-lg flex flex-wrap"
+        className="w-full sm:m-4 lg:m-0 md:w-3/4 rounded-lg flex flex-wrap"
         style={{
           backgroundColor: getCustomerBackgroundColor(selectedCustomer),
         }}
       >
-        <div className="w-full md:w-1/2 p-10 rounded-l-lg text-white">
+        <div className="w-full md:w-1/2 p-10 rounded-xl text-white">
           <p className="text-lg mb-8">
             {selectedCustomer === "Trepp" &&
               "By being able to run our Selenium scripts on the legacy and latest browsers on LambdaTest helped us save significant time in test execution with zero hassle to maintain the infra."}
@@ -100,7 +101,7 @@ const CaseStudy: React.FC = () => {
             Head of Testing and Performance Engineering
           </p>
         </div>
-        <div className="w-full md:w-1/2 bg-white p-10 rounded-r-lg">
+        <div className="w-full md:w-1/2 bg-white p-10 rounded-xl">
           <h2 className="text-4xl font-bold mb-4">
             {selectedCustomer === "Trepp"
               ? "45X"

@@ -3,7 +3,7 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
-} from "./../../components/ui/sheets";
+} from "../../../components/ui/sheets";
 import { Button } from "@/components/ui/button";
 import { Menu as MenuIcon } from "lucide-react";
 import Image from "next/image";
@@ -98,12 +98,14 @@ export default function MobileNav() {
               {/* Action Buttons for small and medium screens */}
               <div className="flex flex-col space-y-4 mt-4">
                 <Button variant="link">Login</Button>
-                <Button
-                  className="hover:border-gradient-start hover:border-gradient-end text-gray-800 text-sm font-medium px-4 py-2 rounded-md transition"
-                  variant="outline"
-                >
-                  Book a Demo
-                </Button>
+                <div className="relative p-0.5 bg-gradient-to-r from-blue-500 to-purple-600 hover:shadow-blue-500/50 hover:shadow-lg rounded">
+                  <Button
+                    asChild
+                    className="relative w-full h-full text-base text-black inline-flex px-3 py-2 rounded cursor-pointer items-center justify-center font-medium bg-white border-none shadow-md hover:shadow-lg transition-all duration-400 ease-in-out"
+                  >
+                    <a href="/">Book a Demo</a>
+                  </Button>
+                </div>
                 <Button className="bg-gradient-to-r from-blue-500 to-purple-500 text-white text-sm font-medium px-4 py-2 rounded-md">
                   Get Started Free
                 </Button>

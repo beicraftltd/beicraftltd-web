@@ -32,15 +32,12 @@ const HeroButtons: React.FC = () => {
       </Button>
 
       {/* Start free with Email button */}
-      <div className="flex-shrink-0">
+      <div className="relative p-0.5 bg-gradient-to-r from-blue-500 to-purple-600 hover:shadow-blue-500/50 hover:shadow-xl rounded">
         <Button
           asChild
-          className="text-base text-black inline-flex px-6 py-4 rounded-lg cursor-pointer items-center justify-center font-medium bg-white border-black hover:bg-black hover:text-white"
-          variant={"outline"}
+          className="relative w-full h-full text-base text-black inline-flex px-3 py-2 rounded cursor-pointer items-center justify-center font-medium bg-white border-none shadow-md transition-hover transition-all duration-400 ease-in-out hover:shadow-xl"
         >
-          <a href="https://accounts.lambdatest.com/register">
-            Start free with Email
-          </a>
+          <a href="/">Start free with Email</a>
         </Button>
       </div>
     </div>

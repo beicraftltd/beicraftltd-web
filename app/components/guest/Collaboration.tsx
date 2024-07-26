@@ -9,7 +9,9 @@ import jenkinsIcon from "/assets/collabs-jenkins.svg";
 import githubIcon from "/assets/collabs-github.svg";
 import circleCiIcon from "/assets/collabs-CircleCI.svg";
 import jiraIcon from "/assets/collabs-jira.svg";
-import rightArrowIcon from "/assets/partner-blue_right_section.svg";
+import rightArrowIcon from "/assets/icons-right-arrow-circle-black.svg";
+import { Button } from "@/components/ui/button";
+import { link } from "fs";
 
 const Collaboration: React.FC = () => {
   const integrations = [
@@ -55,15 +57,20 @@ const Collaboration: React.FC = () => {
       <div className="text-center mt-10">
         <a
           href="#"
-          className="text-gray-700 font-bold text-md uppercase flex items-center justify-center space-x-2"
+          className="flex items-center justify-center"
         >
-          <span>See All Integrations</span>{" "}
+          <Button
+            className="text-gray-700 font-bold text-md uppercase"
+            variant={"link"}
+          >
+            See All Integrations
+          </Button>
           <Image
             src={rightArrowIcon}
             alt="Arrow"
             loading="lazy"
-            width={15} // Adjust width as per your design needs
-            height={15} 
+            width={18} // Adjust width as per your design needs
+            height={15}
             className="w-4 h-4"
           />
         </a>

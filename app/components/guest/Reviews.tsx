@@ -57,17 +57,17 @@ const Reviews: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
             They talk about it better than us
           </h2>
-          <Button
-            // ref="#"
-            className="inline-block bg-black text-white py-3 px-6 rounded shadow hover:bg-transparent hover:text-black rounded border border-black text-center"
-          >
+          <Button className="inline-block bg-black text-white py-3 px-6 rounded shadow hover:bg-transparent hover:text-black border border-black text-center">
             Read All Reviews
           </Button>
         </div>
         <div className="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-4">
           {reviews.map((review, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-md">
-              <p className="text-gray-700 mb-4">{review.text}</p>
+            <div
+              key={index}
+              className="bg-white p-6 rounded-lg shadow-md review-card"
+            >
+              <p className="text-gray-700 mb-4 reviewer-text">{review.text}</p>
               <div className="flex items-center">
                 <Image
                   src={review.imageUrl}
@@ -77,10 +77,15 @@ const Reviews: React.FC = () => {
                   className="rounded-full"
                 />
                 <div className="ml-4">
-                  <div className="font-medium text-gray-900">{review.name}</div>
-                  <div className="text-sm text-gray-500">{review.handle}</div>
+                  <div className="font-medium text-gray-900 reviewer-name">
+                    {review.name}
+                  </div>
+                  <div className="text-sm text-gray-500 reviewer-handle">
+                    {review.handle}
+                  </div>
                 </div>
               </div>
+              <div className=" left-[-10px] top-6 w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-transparent review-card-triangle"></div>
             </div>
           ))}
         </div>

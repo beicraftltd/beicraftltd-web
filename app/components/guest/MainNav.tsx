@@ -27,10 +27,10 @@ const features = [
 
 const Navbar: React.FC = () => {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="w-full">
       <div className="container mx-auto px-4 flex justify-between items-center py-4">
         {/* Logo */}
-        <div className="flex items-center w-auto">
+        <div className="flex items-center">
           <Image
             src={logo}
             alt="Logo"
@@ -41,12 +41,14 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Navigation Menu*/}
-        <div className="flex-grow">
-          <NavigationMenuList className="hidden lg:flex items-center space-x-8 flex-grow">
+        <div className="flex-grow flex items-center justify-center space-x-8">
+          <NavigationMenuList className="hidden lg:flex items-center space-x-8">
             {["Platform", "Enterprise", "Resources", "Developers"].map(
               (item, idx) => (
                 <NavigationMenuItem key={idx}>
-                  <NavigationMenuTrigger>{item}</NavigationMenuTrigger>
+                  <NavigationMenuTrigger className="nav-button">
+                    {item}
+                  </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-6 w-full md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                       <li className="row-span-3">
@@ -82,20 +84,32 @@ const Navbar: React.FC = () => {
               )
             )}
             <NavigationMenuItem>
-              <Button variant="link">Pricing</Button>
+              <Button variant="link" className="nav-button">
+                Pricing
+              </Button>
             </NavigationMenuItem>
           </NavigationMenuList>
         </div>
 
         {/* Action Buttons*/}
         <div className="hidden lg:flex items-center space-x-4 lg:space-x-6">
-          <Button variant="link">Login</Button>
-          <Button
+          <Button variant="link" className="nav-button">
+            Login
+          </Button>
+          <div className="relative p-0.5 bg-gradient-to-r from-blue-500 to-purple-600 hover:shadow-blue-500/50 hover:shadow-lg rounded">
+            <Button
+              asChild
+              className="relative w-full h-full text-base text-black inline-flex px-3 py-2 rounded cursor-pointer items-center justify-center font-medium bg-white border-none shadow-md hover:shadow-lg transition-all duration-400 ease-in-out"
+            >
+              <a href="/">Book a Demo</a>
+            </Button>
+          </div>
+          {/* <Button
             className="hover:border-gradient-start hover:border-gradient-end text-gray-800 text-sm font-medium px-4 py-2 rounded-md transition"
             variant="outline"
           >
             Book a Demo
-          </Button>
+          </Button> */}
           <Button className="bg-gradient-to-r from-blue-500 to-purple-500 text-white text-sm lg:text-base font-medium px-4 py-2 rounded-md">
             Get Started Free
           </Button>

@@ -12,22 +12,13 @@ const Cta2: React.FC = () => {
         <div className="flex flex-wrap lg:flex-nowrap items-center">
           <div className="w-full lg:w-1/2 order-last lg:order-first pr-0 lg:pr-10">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 leading-[30px] md:leading-[45px]">
-              Cross Browser Testing On
-              <br />
-              Desktop And Mobile
-              <br />
-              Browsers
+              Cross Browser Testing On Desktop And Mobile Browsers
             </h2>
             <p className="text-lg text-gray-600 leading-[25px] md:leading-[30px] mt-4 md:mt-6">
-              You can choose from a wide range of Windows and
-              <br />
-              Mac operating systems, along with all legacy and latest
-              <br />
-              browsers. Also test your website or web app on latest
-              <br />
-              mobile browsers with Android and iOS mobile operating
-              <br />
-              systems.
+              You can choose from a wide range of Windows and Mac operating
+              systems, along with all legacy and latest browsers. Also test your
+              website or web app on latest mobile browsers with Android and iOS
+              mobile operating systems.
             </p>
             <div className="mt-4 md:mt-6 flex items-center">
               <Link legacyBehavior href="#">
@@ -35,13 +26,13 @@ const Cta2: React.FC = () => {
                   All Browser and Devices
                 </a>
               </Link>
-              <span className="ml-3">
+              <span className="ml-2 transition-transform duration-300 transform hover:translate-x-1">
                 <Image
                   src={ArrowImage}
                   loading="lazy"
                   alt="Arrow"
-                  width={24}
-                  height={24}
+                  width={18}
+                  height={12}
                 />
               </span>
             </div>
